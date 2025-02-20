@@ -33,3 +33,8 @@ g++ main.cpp -o sfml-app -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audi
 ``` g++ -std=c++17  main.cpp -o sfml-app -I/home/mimi-mimo/Desktop/coding/SFML/include```
 ``` g++ -std=c++17  main.cpp -o sfml-app -I/home/mimi-mimo/Desktop/coding/SFML/include -L./lib```
 ```dpkg -l | grep sfml```
+``` g++ main.cpp -o main -L/usr/local/lib -lsfml-graphics -lsfml-window -lsfml-system```
+``` g++   main.cpp -o sfml-app -I/home/mimi-mimo/Desktop/coding/SFML/include -L./lib -lsfml-graphics -lsfml-window -lsfml-system```
+
+```ldd ./main | ldd main```
+```ldconfig```

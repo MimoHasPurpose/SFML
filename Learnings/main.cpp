@@ -2,31 +2,22 @@
 
 int main()
 {
-    
-    sf::RenderWindow window(sf::VideoMode(800, 600), "My window");
-    
+    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
+    sf::CircleShape shape(100.f);
+    shape.setFillColor(sf::Color::Green);
+
     while (window.isOpen())
     {
-        sf::Text text;
-        
-        text.setString("Hello world");
-        text.setCharacterSize(24);
-        text.setFillColor(sf::Color::Red);
-        text.setStyle(sf::Text::Bold | sf::Text::Underlined);
-        window.draw(text);
         sf::Event event;
         while (window.pollEvent(event))
         {
-            
             if (event.type == sf::Event::Closed)
                 window.close();
         }
 
-        window.clear(sf::Color::White);
-        
-        
+        window.clear();
+        window.draw(shape);
         window.display();
-        
     }
 
     return 0;

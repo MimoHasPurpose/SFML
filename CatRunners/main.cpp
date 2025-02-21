@@ -32,12 +32,7 @@ int main()
         sf::CircleShape triangle(80.f, 3);
         triangle.setPosition(10.f,80.f);
         
-        window.draw(triangle);
-        // define a square
-        sf::CircleShape square(80.f, 4);
-
-        // define an octagon
-        sf::CircleShape octagon(80.f, 8);
+    
 
         // end the current frame
         window.display();

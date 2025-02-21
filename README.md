@@ -47,3 +47,8 @@ The library was installed from ```sudo-apt``` and we used a old version.
     - ```ldconfig```
         -  creates the necessary links and cache to the most recent shared libraries found in the directories specified on the command line, in the file /etc/ld.so.conf, and in the trusted directories,
        /lib and /usr/lib.       
+
+---
+
+- OpenGl installed using glad
+    - use ```local```

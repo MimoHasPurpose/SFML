@@ -52,3 +52,6 @@ The library was installed from ```sudo-apt``` and we used a old version.
 
 - OpenGl installed using glad
     - use ```local```
+
+- Installing opengl
+    - ```sudo apt-get install freeglut3-dev```

@@ -2,10 +2,12 @@
 #include<iostream>
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
+    sf::RenderWindow window(sf::VideoMode(400,400), "SFML works!");
+    window.setPosition({600,300});
     sf::Font font;
     font.loadFromFile("./oj.ttf");
-    sf::Text text("Hello sexy monalisa",font,10);
+    sf::Text text("Hello sexy",font,35);
+    text.move(35.0f,0.0f);
     while (window.isOpen())
     {
         sf::Event event;

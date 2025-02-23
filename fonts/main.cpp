@@ -3,9 +3,9 @@
 int main()
 {
     sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
-
+    sf::Font font;
+    font.loadFromFile("./oj.ttf");
+    sf::Text text("Hello sexy monalisa",font,10);
     while (window.isOpen())
     {
         sf::Event event;
@@ -15,8 +15,10 @@ int main()
                 window.close();
         }
 
+
         window.clear();
-        window.draw(shape);
+        // window.draw(shape);
+        window.draw(text);
         window.display();
     }
 

@@ -55,3 +55,7 @@ The library was installed from ```sudo-apt``` and we used a old version.
 
 - Installing opengl
     - ```sudo apt-get install freeglut3-dev```
+
+
+- Static public member functions
+    - functions that can be called everywhere.
